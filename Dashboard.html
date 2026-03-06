@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>FleetMaster Dashboard</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<h1>Dashboard da Frota</h1>
+
+<canvas id="grafico"></canvas>
+
+<script>
+
+const ctx = document.getElementById("grafico")
+
+new Chart(ctx,{
+type:"bar",
+data:{
+labels:["Combustível","Manutenção"],
+datasets:[{
+data:[5000,3200]
+}]
+}
+})
+
+</script>
+
+</body>
+
+</html>
